@@ -1,0 +1,45 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class BookStore{
+	
+	int bookId,quantity;
+	String bookName,author,publisher;
+	
+	public BookStore(int bookId, int quantity,String bookName, String author, String publisher) {
+		
+		this.bookId = bookId;
+		this.bookName = bookName;
+		this.author = author;
+		this.publisher = publisher;
+		this.quantity = quantity;
+	}
+	
+}
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		
+		//Create map 
+		Map<Integer, BookStore> bookMap = new HashMap<Integer, BookStore>();
+		
+		//Create book
+		BookStore bookStore1 = new BookStore(111, 5, "Java Programming language", "ABCD", "ABCD");
+		BookStore bookStore2 = new BookStore(112, 10, "Ruby Programming language", "AABB", "ACCD");
+		
+		bookMap.put(1, bookStore1);
+		bookMap.put(2, bookStore2);
+		
+		for (Map.Entry<Integer, BookStore> entry:bookMap.entrySet()) {
+			int key = entry.getKey();
+			BookStore bookStore = entry.getValue();
+			System.out.println(key +" Details: ");  
+			System.out.println(bookStore.bookId+" "+bookStore.bookName+" "+bookStore.author+" "
+			+bookStore.publisher+" "+bookStore.quantity);
+			
+		}
+		  
+		
+	}
+}
