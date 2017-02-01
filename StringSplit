@@ -1,0 +1,14 @@
+public class StringSplit {
+
+	public static void main(String[] args) {
+		String name = "Faisal,Porag";
+		
+		String[] lists = name.split(",");
+		
+		String firstName = lists[0];
+		String lastName = lists[1];
+		
+		System.out.println("First name is : " +firstName);
+		System.out.println("Last name is : "+lastName);
+	}
+}
