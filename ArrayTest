@@ -1,0 +1,24 @@
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		
+		int nmbr[] = {12,13,10,12,22,36};
+
+		System.out.println("Numbers Are :");
+		
+		for(int i =0; i<nmbr.length; i++ ){
+			System.out.println(nmbr[i]);
+		}
+		
+		System.out.print("\n");
+		
+		
+		String[] name = {"PORAG","WASIM","SAM","NEWAJ"};
+		
+		System.out.println("Names Are :");
+		for(int i = 0; i < name.length; i++){
+			System.out.println(name[i]);
+		}
+	}
+
+}
