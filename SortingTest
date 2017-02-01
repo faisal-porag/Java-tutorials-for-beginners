@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SortingTest {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> name = new ArrayList<String>();
+		
+		name.add("Faisal");
+		name.add("Porag");
+		name.add("Rajikul");
+		name.add("Jhon");
+		name.add("Vir");
+		
+		Collections.sort(name);
+		
+		for(String obj: name){
+			System.out.println(obj);
+		}
+		
+		
+
+	}
+
+}
