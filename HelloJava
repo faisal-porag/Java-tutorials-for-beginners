@@ -1,0 +1,18 @@
+public class HelloJava {
+
+	public static void main(String[] args) {
+		
+		Name name = new Name();
+		name.getName("FAISAL PORAG");
+	}
+
+}
+
+class Name{
+	
+	public String getName(String name){
+		System.out.println(name);
+		return name;
+				
+	}
+}
