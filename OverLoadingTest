@@ -1,0 +1,29 @@
+public class OverLoadingTest {
+
+	public static void main(String[] args) {
+		
+		Summation summation = new Summation();
+		summation.add(15, 25);
+		summation.add(25, 45, 32.23);
+
+	}
+
+}
+
+class Summation{
+	
+	int res;
+	
+	public int add(int num1, int num2){
+		res = num1 + num2;
+		System.out.println("Result is : " +res);
+		return res;
+	}
+	
+	public int add(int num1, int num2, double num3){
+		
+		res = (num1 + num2) - (num1 + (int) num3); // Casting 
+		System.out.println("Result is : " +res);
+		return res;
+	}
+}
