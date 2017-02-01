@@ -1,0 +1,31 @@
+public class OverridingTest {
+
+	public static void main(String[] args) {
+		
+		Car car = new Car();
+		car.speed();
+		System.out.println("---------- Check ----------");
+		
+		Bike bike = new Bike();
+		bike.speed();
+
+	}
+
+}
+
+class Car{
+	
+	void speed(){
+		System.out.println("Measure Car Speed ....");
+	}
+}
+
+class Bike extends Car{
+	
+	@Override
+	void speed() {
+		// TODO Auto-generated method stub
+		super.speed();
+		System.out.println("Measure Bike's Speed ....");
+	}
+}
