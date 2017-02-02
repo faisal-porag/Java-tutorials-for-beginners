@@ -1,0 +1,29 @@
+import java.util.StringTokenizer;
+
+public class TokenizerTest {
+
+	public static void main(String[] args) {
+		
+		String str = "My Name Is Md Faisal Porag";
+		String split = " "; //Split with space 
+		
+		StringTokenizer tokenizer = new StringTokenizer(str, split);
+		while (tokenizer.hasMoreElements()) {
+			System.out.println("String Tokenizer Output : "+ tokenizer.nextElement());
+			
+		}
+		
+		System.out.println();
+		
+		String nmbrs = "One,Two,Three,,Four,Five,Six";
+		String splitWithComa = ",";
+		
+		String[] tokens = nmbrs.split(splitWithComa);
+		int lengthCount = tokens.length;
+		for (int i = 0; i < lengthCount; i++) {
+			System.out.println("Split Output : "+ tokens[i]);
+		}
+
+	}
+
+}
