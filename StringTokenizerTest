@@ -16,7 +16,7 @@ public class TokenizerTest {
 		System.out.println();
 		
 		String nmbrs = "One,Two,Three,,Four,Five,Six";
-		String splitWithComa = ",";
+		String splitWithComa = ",";//Split by coma
 		
 		String[] tokens = nmbrs.split(splitWithComa);
 		int lengthCount = tokens.length;
