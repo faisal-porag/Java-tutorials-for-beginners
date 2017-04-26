@@ -1,0 +1,18 @@
+public class MinValueOfArray {
+
+	public static void main(String[] args) {
+		int nums[] = {15,12,17,30,25};
+		int min = nums[0];
+		
+		
+		for(int i = 0; i<nums.length; i++){
+			if(min> nums[i]){
+				min = nums[i];
+			}
+		}
+		System.out.println("Minimum Value is : "+min);
+
+	}
+
+}
+//Answer should be 12
