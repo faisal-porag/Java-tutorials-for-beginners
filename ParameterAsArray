@@ -1,0 +1,35 @@
+public class ParameterAsArray {
+
+	public static void main(String[] args) {
+	
+		printString();
+		printString("Porag");
+		printString("Faisal","Porag");
+		printString("Md.","Faisal","Porag");
+		printString("A","B","C","D","E","F","G","H");
+		
+		System.out.println("=============Numbers==============");
+		
+		printNumber();
+		printNumber(1);
+		printNumber(1,2,3);
+		printNumber(45,26,78,32);
+		printNumber(2,4,6,8,10,12,14,16,18,20,22);
+
+	}
+	
+	static void printString(String...strings ){
+		for(String p : strings){
+			System.out.print(p+" ");
+		}
+		System.out.println("");
+	}
+	
+	static void printNumber(int...num ){
+		for(int nums : num){
+			System.out.print(nums+" ");
+		}
+		System.out.println("");
+	}
+
+}
