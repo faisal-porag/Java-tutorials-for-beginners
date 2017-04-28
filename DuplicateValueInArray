@@ -1,0 +1,23 @@
+
+import java.util.Arrays;
+
+public class DuplicateValueInArray {
+
+	public static void main(String[] args) {
+		int test[] = {0,5,6,4,5,8,15,20,10,8,15};//Duplicate value in here : 5,8,15
+		checkDuplicate(test);
+		
+
+	}
+	
+	 static void checkDuplicate(int input[]){
+		 Arrays.sort(input);
+			for (int i = 1; i < input.length; i++) {
+				if(input[i-1]==input[i]){
+					System.out.println("Duplicate number is : "+input[i]);
+				}
+			}
+	 }
+
+}
+
