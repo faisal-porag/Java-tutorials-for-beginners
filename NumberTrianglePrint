@@ -1,0 +1,31 @@
+public class NumberTrianglePrint {
+
+	public static void main(String[] args) {
+		
+		printNumberTriangle();
+		System.out.println("-------------------------------");
+	}
+	
+	static void printNumberTriangle(){
+		int i, j, k;
+		for (i = 1; i <= 5; i++) {
+			for (j = 4; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (k = 1; k <= (2 * i - 1); k++) {
+				System.out.print(i);
+			}
+			System.out.println("");
+		}
+	}
+	
+
+
+}
+/** Output Like this  
+ *  1
+   222
+  33333
+ 4444444
+555555555
+ */
