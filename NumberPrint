@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class NumberPrint {
+	
+	/**
+	 * print reverse sequence number which is multiple of 3 in between 1 to 200
+	 * output: 81 27 9 3 1 
+	 */
+
+	public static void main(String[] args) {
+		ArrayList<Integer> ad = new ArrayList<>();
+		for(int i = 1 ; i <=200; i*=3){
+			ad.add(i);
+		}
+		
+		Collections.reverse(ad);
+		for(int p :ad){
+			System.out.print(p+" ");
+		}
+		
+
+	}
+	
+	
+
+}
