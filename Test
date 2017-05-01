@@ -1,0 +1,21 @@
+public class Numberprint {
+
+	public static void main(String[] args) {
+//		ArrayList<Integer> ad = new ArrayList<>();
+//		for(int i = 1 ; i <=200; i*=3){
+//			ad.add(i);
+//		}
+//		
+//		Collections.reverse(ad);
+//		System.out.println(ad);
+		
+		for(int i = 1 ; i <=200; i*=3){
+			System.out.println(i);
+		}
+		
+
+	}
+	
+	
+
+}
