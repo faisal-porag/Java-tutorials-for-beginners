@@ -1,0 +1,25 @@
+/**
+ * Note :You can have any number of main methods in a class by method overloading.
+But JVM calls main() method which receives string array as arguments only.
+ * 
+ */
+
+public class MainMethodOverLoading {
+	
+	public static void main(String[] args) {
+		System.out.println("Main Method Called Which is with String array");
+	}
+	public static void main(String args) {
+		System.out.println("Hello World");
+	}
+	public static void main(int args) {
+		System.out.println("Integer Type");
+	}
+
+}
+
+/**
+ * Note :You can have any number of main methods in a class by method overloading.
+But JVM calls main() method which receives string array as arguments only.
+ * 
+ */
