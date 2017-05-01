@@ -4,7 +4,7 @@ But JVM calls main() method which receives string array as arguments only.
  * 
  */
 
-public class MainMethodOverLoading {
+public class MainMethodOverloading {
 	
 	public static void main(String[] args) {
 		System.out.println("Main Method Called Which is with String array");
