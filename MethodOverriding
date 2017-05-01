@@ -1,0 +1,45 @@
+
+public class MethodOverRiding {
+	public static void main(String[] args) {
+		Bike bike = new Bike();
+		
+		bike.getManufactureName("BMW");// get name from own class or child class
+		bike.getSpeed(500);//get speed from parent class 
+	}
+}
+
+class Car {
+	String manufactureName;
+	int speed;
+	
+	void getManufactureName(String manufactureName){
+		System.out.println("Car's Name Is : "+ manufactureName);
+	}
+	
+	void getSpeed(int speed){
+		System.out.println("Car's Speed is : "+speed);
+	}
+}
+
+class Bike extends Car{
+	
+	@Override
+	void getManufactureName(String manufactureName) {
+		// TODO Auto-generated method stub
+//		super.getManufactureName(manufactureName);
+		System.out.println("Bike's Name Is : "+ manufactureName);
+	}
+	
+	@Override
+	void getSpeed(int speed) {
+		// TODO Auto-generated method stub
+		super.getSpeed(speed);
+//		System.out.println("Bike's Speed is : "+speed);
+	}
+	
+}
+
+/*Output of this program 
+ * Bike's Name Is : BMW
+Car's Speed is : 500
+ * */
