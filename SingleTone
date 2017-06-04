@@ -1,0 +1,39 @@
+/***
+ * Single tone design pattern 
+ * --------------------------
+ * Ensure that a class has only one instance and 
+ * provide a global point of access to it .
+ * 
+ */
+public class SingleTone {
+
+	public static SingleTone instance = null;
+	
+	private SingleTone(){
+		System.out.println("Creating...");
+	}
+	
+	public static SingleTone getInstance() {
+		if(instance == null){
+			instance = new SingleTone();
+		}
+		return instance;
+	}
+
+}
+
+//and the main class
+public class MainClass {
+	public static void main(String[] args) {
+		SingleTone singleTone1 = SingleTone.getInstance(); //you can not create instance by using new keyword because of private constructor 
+		SingleTone singleTone2 = SingleTone.getInstance(); //you have to get it by calling getInstance method 
+		
+		print("singleTone1", singleTone1);
+		print("singleTone2", singleTone2);
+	}
+	
+	public static void print(String name, SingleTone tone) {
+		System.out.println(String.format("Object : %s, Hashcode : %d", name,tone.hashCode()));
+	}
+
+}
