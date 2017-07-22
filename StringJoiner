@@ -1,0 +1,21 @@
+import java.util.StringJoiner;
+
+public class StringJoinerTest {
+
+	public static void main(String[] args) {
+		StringJoiner joiner = new StringJoiner("->");
+		
+		joiner.add("Kishoregonj");
+		joiner.add("Bajitpur");
+		joiner.add("Voirab");
+		joiner.add("Norshindi");
+		joiner.add("Dhaka-Airport");
+		joiner.add("Dhaka");
+		
+		System.out.println(joiner);
+
+	}
+
+}
+
+//New feature of java 8
