@@ -1,0 +1,24 @@
+public interface FuntionalInterface {
+
+	void saySomething(String something);
+}
+
+class FuntionalInterfaceTest implements FuntionalInterface{
+
+	@Override
+	public void saySomething(String something) {
+		System.out.println(something);
+	}
+	
+}
+
+//Main Class
+class MainClass{
+	public static void main(String[] args) {
+		FuntionalInterfaceTest test = new FuntionalInterfaceTest();
+		
+		test.saySomething("This is a new feature of Java 8");
+	}
+}
+
+//Functional Interface or Single Abstract Method (SAM Interface) Interface is a new feature of Java 8
