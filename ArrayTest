@@ -1,7 +1,7 @@
 public class ArrayTest {
 
 	public static void main(String[] args) {
-		
+		//Integer array list 
 		int nmbr[] = {12,13,10,12,22,36};
 
 		System.out.println("Numbers Are :");
